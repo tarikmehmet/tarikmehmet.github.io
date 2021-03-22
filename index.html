@@ -1,7 +1,64 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Merhabaa Dünya</h1>
-<p>Gökçe'yi Seviyorum</p>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="for the One">
+		<meta name="author" content="taro11">
+		<meta name="keywords" content="sınav soruları, kişisel blog">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>himmlisch - saklı cennet</title>
+		<link rel="shortcut icon" href="g.ico"/>
+	</head>
+	<body>
+		<style>
+		body {
+			font-family: Arial;
+			margin:0;
+		}
+				/* Header/Logo Title */
+		.header {
+			padding: 10px;
+			text-align: center;
+			background: #00adff;
+			color: white;
+			font-size: 40px;
+		}
+
+		/* Page Content */
+		.content {padding:20px;}
+
+		</style>
+			<div class="header">
+			  <h1><b>himmlich</b></h1>
+			</div>
+		<p style="text-align: center;font-size:105%;"> Kullanıcı Girişi
+		</p>
+		<p style="text-align: center;font-size:75%;"> Şifre: <input id='password' type='password'  />
+		</p>
+		<p style="text-align: center;font-size:75%;"> <a href="ana.html" onclick="javascript:return validatePass()">Giriş</a>
+		</p>
+		<!-- An element to toggle between password visibility -->
+		<p style="text-align: center;font-size:65%;"><input type="checkbox" onclick="javascript:myFunction()">Şifreyi Göster/Gizle
+		</p>
+		<script>
+			function validatePass(){
+				if(document.getElementById('password').value == 'Gökçem'){
+					return true;
+				}
+				else{
+					alert('Şifre Hatalı!');
+					return false;
+				}
+			}
+			function myFunction() {
+				var x = document.getElementById('password');
+				if (x.type === "password") {
+					x.type = "text";
+				}
+				else {
+					x.type = "password";
+				}
+			}
+		</script>
+	</body>
 </html>
